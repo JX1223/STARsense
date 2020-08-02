@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP PCIE1X
+K connector
+F ~
+$ENDCMP
+#
+#End Doc Library

@@ -1,0 +1,48 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP +29.5V
+D Power symbol creates a global label with name "+29.5V"
+K power-flag
+$ENDCMP
+#
+$CMP DS3231
+D Extremely Accurate I2C-Integrated RTC/TCXO/Crystal SOIC-16
+K RTC TCXO Realtime Time Clock Crystal Oscillator I2C
+$ENDCMP
+#
+$CMP FPC_connector
+D Generic connectable mounting pin connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
+$CMP LT1807
+D Dual Operational Amplifier
+K dual opamp
+$ENDCMP
+#
+$CMP PCIE1X
+K connector
+F ~
+$ENDCMP
+#
+$CMP SST26VF064B
+K flash memory spi
+$ENDCMP
+#
+$CMP TPD4E1B06
+D Quad bidirectional transil, Suppressor for ESD protection, 5V Standoff, 4 Channels, SOT-23-6
+K ESD protection suppression transient
+$ENDCMP
+#
+$CMP TXB0106PW
+D 6-Bit Bidirectional Voltage-Level Translator, Auto Direction Sensing and ±15-kV ESD Protection, 1.2 - 3.6V APort, 1.65 - 5.5V BPort
+K Level-Shifter CMOS-TTL-Translation
+$ENDCMP
+#
+$CMP W25Q128JVEIQ
+D 128Mb Serial Flash Memory, Standard/Dual/Quad SPI, DFN-8
+K flash memory SPI
+$ENDCMP
+#
+#End Doc Library

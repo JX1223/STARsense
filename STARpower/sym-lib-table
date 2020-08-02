@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name STARpower)(type Legacy)(uri ${KIPRJMOD}/STARpower.lib)(options "")(descr ""))
+  (lib (name +29.5v)(type Legacy)(uri C:/Users/Jason/Desktop/STARsense/STARsense_IRIS/+29.5v.lib)(options "")(descr ""))
+  (lib (name STARpower-rescue)(type Legacy)(uri ${KIPRJMOD}/STARpower-rescue.lib)(options "")(descr ""))
+)

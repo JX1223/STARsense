@@ -1,0 +1,6 @@
+(fp_lib_table
+  (lib (name teensy)(type KiCad)(uri ${KIPRJMOD}/teensy.pretty)(options "")(descr ""))
+  (lib (name STARsense_IRIS)(type KiCad)(uri ${KIPRJMOD}/STARsense_IRIS.pretty)(options "")(descr ""))
+  (lib (name STAR_logos)(type KiCad)(uri C:/Users/Jason/Desktop/STARsense/STARspine/STAR_logos.pretty)(options "")(descr ""))
+  (lib (name iris-footprints)(type KiCad)(uri C:/Users/Jason/Desktop/IRIS/iris-footprints.pretty)(options "")(descr ""))
+)
