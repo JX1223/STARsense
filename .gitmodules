@@ -1,6 +1,0 @@
-[submodule "STARpower/jx-kicad-library"]
-	path = STARpower/jx-kicad-library
-	url = https://github.com/JX1223/jx-kicad-library.git
-[submodule "STARsense_IRIS/jx-kicad-library"]
-	path = STARsense_IRIS/jx-kicad-library
-	url = https://github.com/JX1223/jx-kicad-library.git
