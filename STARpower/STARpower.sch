@@ -14,17 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L STARpower:TPS565201 U3
-U 1 1 5E313C50
-P 7000 1250
-F 0 "U3" H 7000 1650 50  0000 C CNN
-F 1 "TPS565201" H 7000 1550 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:TSOT-23-6" H 7000 1000 50  0001 L CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tps565201.pdf" H 6750 900 50  0001 C CNN
-	1    7000 1250
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C17
 U 1 1 5E3146A5
 P 6250 1350
@@ -193,7 +182,6 @@ Wire Wire Line
 Connection ~ 6250 1050
 Wire Wire Line
 	6250 1050 5850 1050
-Connection ~ 6650 1050
 Wire Wire Line
 	6650 1050 6650 1350
 Wire Wire Line
@@ -228,17 +216,6 @@ Text Notes 5200 650  0    50   ~ 0
 5V Regulator
 Text Notes 2250 1650 0    50   ~ 0
 LiPo/DC Auto-Switching Mux
-$Comp
-L STARpower:TPS55340 U4
-U 1 1 5E346EFD
-P 8300 2950
-F 0 "U4" H 8300 3567 50  0000 C CNN
-F 1 "TPS55340" H 8300 3476 50  0000 C CNN
-F 2 "STARpower:HTSSOP-14" H 8300 2700 50  0001 L CNN
-F 3 "" H 8050 2600 50  0001 C CNN
-	1    8300 2950
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7700 2700 7700 2600
 $Comp
@@ -344,18 +321,6 @@ Wire Wire Line
 	5800 2900 5800 3500
 Wire Wire Line
 	5800 3500 6050 3500
-Connection ~ 8100 3500
-Wire Wire Line
-	8100 3500 8200 3500
-Connection ~ 8200 3500
-Wire Wire Line
-	8200 3500 8300 3500
-Connection ~ 8300 3500
-Wire Wire Line
-	8300 3500 8400 3500
-Connection ~ 8400 3500
-Wire Wire Line
-	8400 3500 8500 3500
 Wire Wire Line
 	6050 3400 6050 3500
 Connection ~ 6050 3500
@@ -374,8 +339,6 @@ Wire Wire Line
 Wire Wire Line
 	7350 3400 7350 3500
 Connection ~ 7350 3500
-Wire Wire Line
-	7350 3500 8100 3500
 Wire Wire Line
 	7700 2600 5800 2600
 Connection ~ 7700 2600
@@ -400,8 +363,6 @@ F 3 "7443251000" H 8750 2250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7700 2250 7700 2600
-Wire Wire Line
-	8900 2700 8900 2600
 $Comp
 L Device:D_Schottky D1
 U 1 1 5E37948F
@@ -413,9 +374,6 @@ F 3 "~" H 9300 2250 50  0001 C CNN
 	1    9300 2250
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	8900 2600 8900 2250
-Connection ~ 8900 2600
 Wire Wire Line
 	8600 2250 7700 2250
 Wire Wire Line
@@ -456,9 +414,6 @@ Wire Wire Line
 Connection ~ 9650 2900
 Wire Wire Line
 	9650 3350 9650 3500
-Wire Wire Line
-	9650 3500 8500 3500
-Connection ~ 8500 3500
 $Comp
 L Device:C C23
 U 1 1 5E3954B9
@@ -526,18 +481,6 @@ Wire Notes Line
 	11150 3700 11150 2000
 Wire Notes Line
 	5200 2000 5200 3700
-$Comp
-L STARpower:+29.5V #PWR037
-U 1 1 5E3B54B9
-P 10750 2250
-F 0 "#PWR037" H 10750 2100 50  0001 C CNN
-F 1 "+29.5V" H 10765 2423 50  0000 C CNN
-F 2 "" H 10750 2250 50  0001 C CNN
-F 3 "" H 10750 2250 50  0001 C CNN
-	1    10750 2250
-	1    0    0    -1  
-$EndComp
-Connection ~ 10750 2250
 Wire Notes Line
 	5200 2000 11150 2000
 Wire Notes Line
@@ -553,17 +496,6 @@ F 1 "GND" H 8305 3327 50  0000 C CNN
 F 2 "" H 8300 3500 50  0001 C CNN
 F 3 "" H 8300 3500 50  0001 C CNN
 	1    8300 3500
-	1    0    0    -1  
-$EndComp
-$Comp
-L STARpower:TPS2121 U1
-U 1 1 5E37DB60
-P 3800 2600
-F 0 "U1" H 3800 3315 50  0000 C CNN
-F 1 "TPS2121" H 3800 3224 50  0000 C CNN
-F 2 "STARpower:TPS2121" H 3800 2600 50  0001 C CNN
-F 3 "" H 3800 2600 50  0001 C CNN
-	1    3800 2600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -615,12 +547,7 @@ F 3 "~" H 4750 2800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3400 2950 3400 3050
-Wire Wire Line
 	3400 3400 3800 3400
-Connection ~ 3400 3050
-Wire Wire Line
-	3400 3050 3400 3400
 Connection ~ 4250 3400
 Wire Wire Line
 	3800 3250 3800 3400
@@ -701,7 +628,6 @@ Wire Wire Line
 	4200 2250 4200 2050
 Wire Wire Line
 	4200 2050 4300 2050
-Connection ~ 4200 2050
 $Comp
 L power:GND #PWR019
 U 1 1 5E3BA1F1
@@ -727,30 +653,7 @@ Wire Wire Line
 Wire Wire Line
 	4200 2550 4750 2550
 $Comp
-L STARpower:+MUX #PWR026
-U 1 1 5E3CD07A
-P 4750 2050
-F 0 "#PWR026" H 4750 1900 50  0001 C CNN
-F 1 "+MUX" H 4765 2223 50  0000 C CNN
-F 2 "" H 4750 2050 50  0001 C CNN
-F 3 "" H 4750 2050 50  0001 C CNN
-	1    4750 2050
-	1    0    0    -1  
-$EndComp
-$Comp
-L STARpower:+MUX #PWR031
-U 1 1 5E3CD6B6
-P 5450 1050
-F 0 "#PWR031" H 5450 900 50  0001 C CNN
-F 1 "+MUX" H 5465 1223 50  0000 C CNN
-F 2 "" H 5450 1050 50  0001 C CNN
-F 3 "" H 5450 1050 50  0001 C CNN
-	1    5450 1050
-	1    0    0    -1  
-$EndComp
-Connection ~ 5450 1050
-$Comp
-L STARpower:+MUX #PWR029
+L STARpower-rescue:+MUX-STARpower #PWR029
 U 1 1 5E3CE13C
 P 5400 2600
 F 0 "#PWR029" H 5400 2450 50  0001 C CNN
@@ -769,17 +672,6 @@ Wire Notes Line
 	5100 3700 2250 3700
 Wire Notes Line
 	2250 1650 2250 3700
-$Comp
-L STARpower:LTC3110 U2
-U 1 1 5E3A6326
-P 4050 6000
-F 0 "U2" H 3150 7000 50  0000 C CNN
-F 1 "LTC3110" H 3150 6900 50  0000 C CNN
-F 2 "STARpower:TSSOP-24_W4.40mm_1EP" H 4750 4850 50  0001 C CNN
-F 3 "" H 4750 4850 50  0001 C CNN
-	1    4050 6000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3550 4900 3450 4900
 Wire Wire Line
@@ -804,10 +696,8 @@ F 3 "744314150" H 3700 4800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3550 4900 3550 4800
-Connection ~ 3550 4900
 Wire Wire Line
 	3850 4900 3850 4800
-Connection ~ 3850 4900
 $Comp
 L Device:CP C1
 U 1 1 5E3DA020
@@ -854,7 +744,6 @@ F 3 "" H 2900 5600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3250 5300 2900 5300
-Connection ~ 3250 5300
 $Comp
 L Device:R R13
 U 1 1 5E3EAE46
@@ -1019,7 +908,6 @@ Wire Wire Line
 	4050 4900 4150 4900
 Wire Wire Line
 	4050 4900 4050 4450
-Connection ~ 4050 4900
 Connection ~ 4050 4450
 Wire Wire Line
 	4050 4450 4250 4450
@@ -1084,7 +972,6 @@ Wire Wire Line
 	1800 4450 4050 4450
 Wire Wire Line
 	3250 6800 3250 6900
-Connection ~ 3250 6900
 $Comp
 L Device:C C11
 U 1 1 5E4FC820
@@ -1203,7 +1090,7 @@ Connection ~ 1500 7400
 Wire Wire Line
 	1500 5100 1500 7400
 $Comp
-L dk_Transistors-FETs-MOSFETs-Single:IRLML6402TRPBF Q1
+L STARpower-rescue:IRLML6402TRPBF-dk_Transistors-FETs-MOSFETs-Single Q1
 U 1 1 5E565E04
 P 1400 4450
 F 0 "Q1" V 1667 4450 60  0000 C CNN
@@ -1469,7 +1356,6 @@ F 3 "~" H 4750 2200 50  0001 C CNN
 	1    4750 2200
 	1    0    0    -1  
 $EndComp
-Connection ~ 4750 2050
 Wire Wire Line
 	4750 2350 5050 2350
 Wire Wire Line
@@ -1503,17 +1389,6 @@ Text Label 4850 4800 0    50   ~ 0
 SVsys
 Text Label 4900 5500 0    50   ~ 0
 PROG
-$Comp
-L STARpower:PCIE1X J1
-U 1 1 5E3E465E
-P 1200 1700
-F 0 "J1" H 1250 2717 50  0000 C CNN
-F 1 "PCIE1X" H 1250 2626 50  0000 C CNN
-F 2 "Connector_PCBEdge:BUS_PCIexpress_x1" H 1200 1700 50  0001 C CNN
-F 3 "~" H 1200 1700 50  0001 C CNN
-	1    1200 1700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1500 2300 1500 2200
 Wire Wire Line
@@ -1531,18 +1406,6 @@ F 3 "" H 1600 2600 50  0001 C CNN
 	1    1600 2600
 	1    0    0    -1  
 $EndComp
-$Comp
-L STARpower:+29.5V #PWR09
-U 1 1 5E6FA781
-P 1700 2400
-F 0 "#PWR09" H 1700 2250 50  0001 C CNN
-F 1 "+29.5V" H 1715 2573 50  0000 C CNN
-F 2 "" H 1700 2400 50  0001 C CNN
-F 3 "" H 1700 2400 50  0001 C CNN
-	1    1700 2400
-	1    0    0    -1  
-$EndComp
-Connection ~ 1500 2400
 Wire Wire Line
 	1500 2400 1700 2400
 $Comp
@@ -1556,7 +1419,6 @@ F 3 "" H 1700 2200 50  0001 C CNN
 	1    1700 2200
 	1    0    0    -1  
 $EndComp
-Connection ~ 1500 2200
 Wire Wire Line
 	1500 2200 1700 2200
 Wire Wire Line
@@ -1572,7 +1434,6 @@ F 3 "~" H 2100 2000 50  0001 C CNN
 	1    2100 2000
 	1    0    0    -1  
 $EndComp
-Connection ~ 1500 2000
 Wire Wire Line
 	2100 2000 1900 2000
 Wire Wire Line
@@ -1595,7 +1456,6 @@ Wire Wire Line
 	1000 2300 1000 2200
 Wire Wire Line
 	1000 2500 1000 2400
-Connection ~ 1000 2200
 Wire Wire Line
 	800  2200 1000 2200
 $Comp
@@ -1622,21 +1482,8 @@ F 3 "" H 900 2600 50  0001 C CNN
 	1    900  2600
 	1    0    0    -1  
 $EndComp
-Connection ~ 1000 2400
-$Comp
-L STARpower:+29.5V #PWR03
-U 1 1 5E6F9D93
-P 800 2400
-F 0 "#PWR03" H 800 2250 50  0001 C CNN
-F 1 "+29.5V" H 815 2573 50  0000 C CNN
-F 2 "" H 800 2400 50  0001 C CNN
-F 3 "" H 800 2400 50  0001 C CNN
-	1    800  2400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1000 2400 800  2400
-Connection ~ 1000 2000
 Wire Wire Line
 	600  2000 1000 2000
 $Comp
@@ -1858,4 +1705,157 @@ F 3 "" H 7550 4300 50  0001 C CNN
 	1    7550 4300
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	8900 2250 8900 2600
+Wire Wire Line
+	7350 3500 8100 3500
+$Comp
+L jx-kicad-symbols:TPS55340 U?
+U 1 1 5F2CF452
+P 8300 2950
+F 0 "U?" H 8300 3567 50  0000 C CNN
+F 1 "TPS55340" H 8300 3476 50  0000 C CNN
+F 2 "" H 8300 2700 50  0001 L CNN
+F 3 "" H 8050 2600 50  0001 C CNN
+	1    8300 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 3500 9650 3500
+Wire Wire Line
+	8900 2700 8900 2600
+Connection ~ 8900 2600
+Wire Wire Line
+	8500 3500 8400 3500
+Connection ~ 8500 3500
+Connection ~ 8100 3500
+Connection ~ 8200 3500
+Wire Wire Line
+	8200 3500 8100 3500
+Connection ~ 8300 3500
+Wire Wire Line
+	8300 3500 8200 3500
+Connection ~ 8400 3500
+Wire Wire Line
+	8400 3500 8300 3500
+$Comp
+L jx-kicad-symbols:TPS565201 U?
+U 1 1 5F2E90B2
+P 7000 1250
+F 0 "U?" H 7000 1675 50  0000 C CNN
+F 1 "TPS565201" H 7000 1584 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-6" H 7000 1000 50  0001 L CNN
+F 3 "" H 6750 900 50  0001 C CNN
+	1    7000 1250
+	1    0    0    -1  
+$EndComp
+Connection ~ 6650 1050
+$Comp
+L jx-kicad-symbols:TPS2121 U?
+U 1 1 5F2EA07F
+P 3800 2600
+F 0 "U?" H 3800 3417 50  0000 C CNN
+F 1 "TPS2121" H 3800 3326 50  0000 C CNN
+F 2 "" H 3800 2700 50  0001 C CNN
+F 3 "" H 3800 2700 50  0001 C CNN
+	1    3800 2600
+	1    0    0    -1  
+$EndComp
+Connection ~ 4200 2050
+Wire Wire Line
+	3400 2950 3400 3050
+Wire Wire Line
+	3400 3050 3400 3400
+Connection ~ 3400 3050
+$Comp
+L jx-kicad-symbols:+MUX #PWR?
+U 1 1 5F2F86A5
+P 4750 2050
+F 0 "#PWR?" H 4750 1900 50  0001 C CNN
+F 1 "+MUX" H 4765 2223 50  0000 C CNN
+F 2 "" H 4750 2050 50  0001 C CNN
+F 3 "" H 4750 2050 50  0001 C CNN
+	1    4750 2050
+	1    0    0    -1  
+$EndComp
+Connection ~ 4750 2050
+$Comp
+L jx-kicad-symbols:PCIE1X J?
+U 1 1 5F2F9161
+P 1200 1700
+F 0 "J?" H 1250 2717 50  0000 C CNN
+F 1 "PCIE1X" H 1250 2626 50  0000 C CNN
+F 2 "" H 1200 1700 50  0001 C CNN
+F 3 "~" H 1200 1700 50  0001 C CNN
+	1    1200 1700
+	1    0    0    -1  
+$EndComp
+Connection ~ 1000 2000
+Connection ~ 1000 2200
+Connection ~ 1000 2400
+Connection ~ 1500 2000
+Connection ~ 1500 2200
+Connection ~ 1500 2400
+$Comp
+L jx-kicad-symbols:+29.5V #PWR?
+U 1 1 5F2FB9F7
+P 800 2400
+F 0 "#PWR?" H 800 2250 50  0001 C CNN
+F 1 "+29.5V" H 815 2573 50  0000 C CNN
+F 2 "" H 800 2400 50  0001 C CNN
+F 3 "" H 800 2400 50  0001 C CNN
+	1    800  2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L jx-kicad-symbols:+29.5V #PWR?
+U 1 1 5F2FC339
+P 1700 2400
+F 0 "#PWR?" H 1700 2250 50  0001 C CNN
+F 1 "+29.5V" H 1715 2573 50  0000 C CNN
+F 2 "" H 1700 2400 50  0001 C CNN
+F 3 "" H 1700 2400 50  0001 C CNN
+	1    1700 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L jx-kicad-symbols:+MUX #PWR?
+U 1 1 5F2FCA57
+P 5450 1050
+F 0 "#PWR?" H 5450 900 50  0001 C CNN
+F 1 "+MUX" H 5465 1223 50  0000 C CNN
+F 2 "" H 5450 1050 50  0001 C CNN
+F 3 "" H 5450 1050 50  0001 C CNN
+	1    5450 1050
+	1    0    0    -1  
+$EndComp
+Connection ~ 5450 1050
+$Comp
+L jx-kicad-symbols:LTC3110 U?
+U 1 1 5F2FD723
+P 4050 6000
+F 0 "U?" H 4050 4811 50  0000 C CNN
+F 1 "LTC3110" H 4050 4720 50  0000 C CNN
+F 2 "" H 4750 4850 50  0001 C CNN
+F 3 "" H 4750 4850 50  0001 C CNN
+	1    4050 6000
+	1    0    0    -1  
+$EndComp
+Connection ~ 4050 4900
+Connection ~ 3850 4900
+Connection ~ 3550 4900
+Connection ~ 3250 5300
+Connection ~ 3250 6900
+$Comp
+L jx-kicad-symbols:+29.5V #PWR?
+U 1 1 5F2FEEA7
+P 10750 2250
+F 0 "#PWR?" H 10750 2100 50  0001 C CNN
+F 1 "+29.5V" H 10765 2423 50  0000 C CNN
+F 2 "" H 10750 2250 50  0001 C CNN
+F 3 "" H 10750 2250 50  0001 C CNN
+	1    10750 2250
+	1    0    0    -1  
+$EndComp
+Connection ~ 10750 2250
 $EndSCHEMATC
