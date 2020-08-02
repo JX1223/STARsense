@@ -652,18 +652,6 @@ Wire Wire Line
 	4750 2550 4750 2650
 Wire Wire Line
 	4200 2550 4750 2550
-$Comp
-L STARpower-rescue:+MUX-STARpower #PWR029
-U 1 1 5E3CE13C
-P 5400 2600
-F 0 "#PWR029" H 5400 2450 50  0001 C CNN
-F 1 "+MUX" H 5415 2773 50  0000 C CNN
-F 2 "" H 5400 2600 50  0001 C CNN
-F 3 "" H 5400 2600 50  0001 C CNN
-	1    5400 2600
-	1    0    0    -1  
-$EndComp
-Connection ~ 5400 2600
 Wire Notes Line
 	2250 1650 5100 1650
 Wire Notes Line
@@ -1089,26 +1077,6 @@ Wire Wire Line
 Connection ~ 1500 7400
 Wire Wire Line
 	1500 5100 1500 7400
-$Comp
-L STARpower-rescue:IRLML6402TRPBF-dk_Transistors-FETs-MOSFETs-Single Q1
-U 1 1 5E565E04
-P 1400 4450
-F 0 "Q1" V 1667 4450 60  0000 C CNN
-F 1 "IRLML6402TRPBF" V 1561 4450 60  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 1600 4650 60  0001 L CNN
-F 3 "https://www.infineon.com/dgdl/irlml6402pbf.pdf?fileId=5546d462533600a401535668d5c2263c" H 1600 4750 60  0001 L CNN
-F 4 "IRLML6402PBFCT-ND" H 1600 4850 60  0001 L CNN "Digi-Key_PN"
-F 5 "IRLML6402TRPBF" H 1600 4950 60  0001 L CNN "MPN"
-F 6 "Discrete Semiconductor Products" H 1600 5050 60  0001 L CNN "Category"
-F 7 "Transistors - FETs, MOSFETs - Single" H 1600 5150 60  0001 L CNN "Family"
-F 8 "https://www.infineon.com/dgdl/irlml6402pbf.pdf?fileId=5546d462533600a401535668d5c2263c" H 1600 5250 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/infineon-technologies/IRLML6402TRPBF/IRLML6402PBFCT-ND/812500" H 1600 5350 60  0001 L CNN "DK_Detail_Page"
-F 10 "MOSFET P-CH 20V 3.7A SOT-23" H 1600 5450 60  0001 L CNN "Description"
-F 11 "Infineon Technologies" H 1600 5550 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 1600 5650 60  0001 L CNN "Status"
-	1    1400 4450
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	1600 4450 1800 4450
 Connection ~ 1800 4450
@@ -1858,4 +1826,36 @@ F 3 "" H 10750 2250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 10750 2250
+$Comp
+L dk_Transistors-FETs-MOSFETs-Single:IRLML6402TRPBF Q?
+U 1 1 5F27F0F5
+P 1400 4450
+F 0 "Q?" V 1667 4450 60  0000 C CNN
+F 1 "IRLML6402TRPBF" V 1561 4450 60  0000 C CNN
+F 2 "digikey-footprints:SOT-23-3" H 1600 4650 60  0001 L CNN
+F 3 "https://www.infineon.com/dgdl/irlml6402pbf.pdf?fileId=5546d462533600a401535668d5c2263c" H 1600 4750 60  0001 L CNN
+F 4 "IRLML6402PBFCT-ND" H 1600 4850 60  0001 L CNN "Digi-Key_PN"
+F 5 "IRLML6402TRPBF" H 1600 4950 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 1600 5050 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 1600 5150 60  0001 L CNN "Family"
+F 8 "https://www.infineon.com/dgdl/irlml6402pbf.pdf?fileId=5546d462533600a401535668d5c2263c" H 1600 5250 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/infineon-technologies/IRLML6402TRPBF/IRLML6402PBFCT-ND/812500" H 1600 5350 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET P-CH 20V 3.7A SOT-23" H 1600 5450 60  0001 L CNN "Description"
+F 11 "Infineon Technologies" H 1600 5550 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 1600 5650 60  0001 L CNN "Status"
+	1    1400 4450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L jx-kicad-symbols:+MUX #PWR?
+U 1 1 5F2835B6
+P 5400 2600
+F 0 "#PWR?" H 5400 2450 50  0001 C CNN
+F 1 "+MUX" H 5415 2773 50  0000 C CNN
+F 2 "" H 5400 2600 50  0001 C CNN
+F 3 "" H 5400 2600 50  0001 C CNN
+	1    5400 2600
+	1    0    0    -1  
+$EndComp
+Connection ~ 5400 2600
 $EndSCHEMATC
