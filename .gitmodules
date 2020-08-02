@@ -4,3 +4,9 @@
 [submodule "STARsense_IRIS/jx-kicad-library"]
 	path = STARsense_IRIS/jx-kicad-library
 	url = https://github.com/JX1223/jx-kicad-library.git
+[submodule "STARsense_IRIS/digikey-kicad-library"]
+	path = STARsense_IRIS/digikey-kicad-library
+	url = https://github.com/Digi-Key/digikey-kicad-library.git
+[submodule "STARpower/digikey-kicad-library"]
+	path = STARpower/digikey-kicad-library
+	url = https://github.com/Digi-Key/digikey-kicad-library.git
